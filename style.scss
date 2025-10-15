@@ -10,6 +10,9 @@ body {
   font-family: "Alan Sans", sans-serif;
   background-color: #0c0c0c;
   color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -50,6 +53,11 @@ header {
 
 main {
   padding: 40px 20px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
 }
 
 .catalogo-filmes {
@@ -105,13 +113,13 @@ main {
     justify-content: center;
   }
   
-    h3 {
+  p {
       font-size: 0.7rem;
       display: flex;
       justify-content: center;
       font-weight: lighter;
       text-align: center;
-    }
+  }
 
   .button {
     background-color: rgb(210, 2, 2);
@@ -141,8 +149,76 @@ footer {
   display: block;
   text-align: center;
   justify-content: center;
+  margin-top: auto;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
   
   a {
     color: white;
+    text-decoration: none;
+  }
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 3rem;
+
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+
+    
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    width: 400px;
+    padding: 15px;
+    font-size: 1.1rem;
+    height: 50px;
+    border: 1px solid rgb(210, 2, 2);
+    border-radius: 14px;
+  }
+
+  a {
+    color: rgb(210, 2, 2);
+    text-decoration: none;
+  }
+
+  button {
+    background-color: rgb(210, 2, 2);
+    color: white;
+    border: solid #0c0c0c;
+    padding: 15px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 4px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 14px;
+    cursor: pointer;
+
+    &:hover {
+    color: white;
+    background-color: darken(rgb(210, 2, 2), 10%);
+    transition: 0.4s;
+    }
   }
 }
