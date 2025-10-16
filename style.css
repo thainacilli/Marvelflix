@@ -54,6 +54,17 @@ main {
   justify-content: center;
 }
 
+.sobre {
+  margin-top: 8rem;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.sobre a {
+  text-decoration: none;
+  color: rgb(210, 2, 2);
+}
+
 .catalogo-filmes h1 {
   text-align: center;
   margin-bottom: 40px;
