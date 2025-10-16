@@ -19,6 +19,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 100%;
 }
 header nav ul {
   display: flex;
@@ -63,6 +65,28 @@ main {
 .sobre a {
   text-decoration: none;
   color: rgb(210, 2, 2);
+}
+
+.fundo {
+  background-image: url(../img/fundo_marvel.jpg) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fundo h1 {
+  font-size: 10rem;
+  color: white;
+  font-weight: 900;
+  text-shadow: 2px 2px 0 black, -2px -2px 0 black;
+}
+
+.main-sem-padding {
+  padding: 0 !important;
 }
 
 .catalogo-filmes h1 {
@@ -145,9 +169,11 @@ main {
 footer {
   background-color: rgb(210, 2, 2);
   display: block;
+  padding: 20px;
   text-align: center;
-  justify-content: center;
   margin-top: auto;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 footer h3 {
   font-size: 1rem;
@@ -208,4 +234,11 @@ footer a {
   color: white;
   background-color: rgb(159.4811320755, 1.5188679245, 1.5188679245);
   transition: 0.4s;
+}
+
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  overflow-x: hidden !important;
 }/*# sourceMappingURL=style.css.map */
